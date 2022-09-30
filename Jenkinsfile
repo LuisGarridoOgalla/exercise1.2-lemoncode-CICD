@@ -1,7 +1,7 @@
 pipeline{
     agent{
         docker{
-            image 'jenkins-blueocean'
+            image 'gradle:7.5.1-jdk8'
         }
 
     }
