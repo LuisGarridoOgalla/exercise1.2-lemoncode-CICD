@@ -1,7 +1,9 @@
 pipeline{
     agent{
         docker {
-            image'dev-core:gradle-java-14'
+            image 'openjdk:11'
+            args  '-v /tmp:/tmp'
+            reuseNode true
         }
 
     }
