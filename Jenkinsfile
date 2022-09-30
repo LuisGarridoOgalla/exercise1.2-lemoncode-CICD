@@ -1,7 +1,7 @@
 pipeline{
     agent{
         docker {
-            image 'gradle'
+            image 'gradle:6.2.2-jdk8'
         }
 
     }
