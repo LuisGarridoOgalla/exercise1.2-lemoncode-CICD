@@ -1,15 +1,12 @@
 pipeline{
     agent{
-        label 'gradle'
+        docker {
+            image 'gradle:7.5.1-jdk8'
+        }
 
     }
     stages{
-        stage('Compile'){  
-             agent{
-                docker {
-                    image 'java:8'
-                }
-             }
+        stage('Compile'){ 
             steps{
                 
              sh '''
