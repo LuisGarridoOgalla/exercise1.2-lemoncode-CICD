@@ -8,8 +8,8 @@ pipeline{
              agent{
                 docker {
                     image 'java:8'
-                    args '-v /home/tester/.gradle:/.gradle'
                 }
+             }
             steps{
                 
              sh '''
