@@ -1,7 +1,7 @@
 pipeline{
     agent{
         docker{
-            image 'lemoncode/jenkins'
+            image 'jenkins-blueocean'
         }
 
     }
